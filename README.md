@@ -32,8 +32,12 @@ object destructing  ,array destructing, dynamic keys
 3. `let tempTasks = tasks.filter(task => task.id !== id) setTasks(tempTasks)`
 
 ### Update :
-1. in task Item pass task to the function u pass as a prope
-2. in app,set tasks  `tasks.map((task) => task.id === updatedtask.id ? updatedtask : task`
+1. create a state called updated task with initial value props.task
+2. add values to the inputs
+3. add handle change `setUpdatedTask({ ...updatedTask, [event.target.name]: event.target.value });`
+4. add handle submit 
+5. in app create update function and pass it to list them item 
+7. in app,set tasks  ` let tempTasks = tasks.map((task) =>task.id === updatedtask.id ? updatedtask : task);`
 
 ## Instructor Notes
 
