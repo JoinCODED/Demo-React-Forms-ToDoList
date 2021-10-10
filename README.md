@@ -14,15 +14,15 @@ object destructing  ,array destructing, dynamic keys
 
 ### Create:
 1. create a component called AddTaskForm, and a state called task
-2. add input for task , with name = title 
-3. select with options, with name = priority 
-4. button 
-5. wrap all this in form 
-6. add handle change for each input
-7. add handle submit for submit 
-8. in hangle change add `setTask({ ...task, [event.target.name]: event.target.value });`
-9. in handle submit `event.preventDefault();` 
-10. go to app to create a function to add task 
+2. div with `class="col-md-12"` and from with `className="task-form"`
+3. add input for task , with name = title 
+4. select with options, with name = priority 
+5. button 
+7. add handle change for each input
+8. add handle submit for submit 
+9. in hangle change add `setTask({ ...task, [event.target.name]: event.target.value });`
+10. in handle submit `event.preventDefault();` 
+11. go to app to create a function to add task 
 12. push new task to the array `setTasks([...tasks, newTask])`
 
 
