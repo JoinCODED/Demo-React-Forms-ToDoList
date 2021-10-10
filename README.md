@@ -14,15 +14,15 @@ object destructing  ,array destructing, dynamic keys
 
 ### Create:
 1. create a component called AddTaskForm, and a state called task
-2. add input for task , with name = title 
-3. select with options, with name = priority 
-4. button 
-5. wrap all this in form 
-6. add handle change for each input
-7. add handle submit for submit 
-8. in hangle change add `setTask({ ...task, [event.target.name]: event.target.value });`
-9. in handle submit `event.preventDefault();` 
-10. go to app to create a function to add task 
+2. div with `class="col-md-12"` and from with `className="task-form"`
+3. add input for task , with name = title 
+4. select with options, with name = priority 
+5. button 
+7. add handle change for each input
+8. add handle submit for submit 
+9. in hangle change add `setTask({ ...task, [event.target.name]: event.target.value });`
+10. in handle submit `event.preventDefault();` 
+11. go to app to create a function to add task 
 12. push new task to the array `setTasks([...tasks, newTask])`
 
 
@@ -32,8 +32,12 @@ object destructing  ,array destructing, dynamic keys
 3. `let tempTasks = tasks.filter(task => task.id !== id) setTasks(tempTasks)`
 
 ### Update :
-1. in task Item pass task to the function u pass as a prope
-2. in app,set tasks  `tasks.map((task) => task.id === updatedtask.id ? updatedtask : task`
+1. create a state called updated task with initial value props.task
+2. add values to the inputs
+3. add handle change `setUpdatedTask({ ...updatedTask, [event.target.name]: event.target.value });`
+4. add handle submit 
+5. in app create update function and pass it to list them item 
+7. in app,set tasks  ` let tempTasks = tasks.map((task) =>task.id === updatedtask.id ? updatedtask : task);`
 
 ## Instructor Notes
 
