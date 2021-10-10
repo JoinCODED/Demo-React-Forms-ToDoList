@@ -1,6 +1,5 @@
-import React from 'react';
-import TaskItem from './TaskItem';
-
+import React from "react";
+import TaskItem from "./TaskItem";
 
 function TasksList(props) {
   const tasksList = props.tasks.map((task) => <TaskItem task={task} />);

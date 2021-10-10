@@ -15,9 +15,8 @@ body {
   position: relative;
 }
 
-
 .main-todo-input:before {
-  content: '';
+  content: "";
   position: absolute;
   bottom: -40px;
   width: 50px;
@@ -26,7 +25,6 @@ body {
   left: 50%;
   margin-left: -25px;
 }
-
 
 .main-todo-input-item input:first-child {
   border-radius: 100%;
@@ -40,7 +38,7 @@ body {
   padding-left: 20px;
 }
 
-.task-form input{
+.task-form input {
   float: left;
   width: 100%;
   box-sizing: border-box;
@@ -51,7 +49,7 @@ body {
   padding: 5px;
 }
 
-.task-form button{
+.task-form button {
   background: #4db7fe;
   position: absolute;
   right: 0px;
@@ -124,7 +122,7 @@ body {
   cursor: pointer;
 }
 .update {
-  margin-right:5px;
+  margin-right: 5px;
   float: right;
   color: #757575 !important;
   font-size: 14px;
@@ -169,4 +167,29 @@ ul {
 }
 .select {
   width: 100%;
+}
+
+.update-form {
+  max-width: 500px;
+  margin: 20px auto;
+  background: white;
+  padding: 0 120px 0 0;
+  border-radius: 1px;
+  box-shadow: 0px 0px 0px 6px rgba(255, 255, 255, 0.3);
+  float: center;
+  width: 100%;
+  position: relative;
+}
+.update-form button {
+  background: #4db7fe;
+  position: absolute;
+  right: 0px;
+  height: 43px;
+  width: 100px;
+  color: #fff;
+  top: 44px;
+  border: none;
+  border-top-right-radius: 0px;
+  border-bottom-right-radius: 0px;
+  cursor: pointer;
 }
