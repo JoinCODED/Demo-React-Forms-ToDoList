@@ -3,16 +3,22 @@ import { useState } from "react";
 import "./App.css";
 import TasksList from "./Components/TasksList";
 import tasksData from "./tasksData";
+import AddTaskForm from "./Components/AddTaskForm";
 
 function App() {
   const [tasks, setTasks] = useState(tasksData);
 
-  // to do : create a task
+  const createTask = (newTask) => {
+    setTasks([...tasks, newTask]);
+  };
+
   // to do : delete a task
 
   return (
     <>
-      <div class="row">{/* To do: add a form */}</div>
+      <div class="row">
+        <AddTaskForm createTask={createTask} />
+      </div>
       <TasksList tasks={tasks} />
     </>
   );
