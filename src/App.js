@@ -7,7 +7,7 @@ import React, { useState } from "react";
 import TasksList from "./Components/TasksList";
 import Modal from "./Components/modals/TaskModal";
 
-//bootsrap
+//bootstrap
 import { Button } from "react-bootstrap";
 
 function App() {
