@@ -1,19 +1,28 @@
-import "bootstrap/dist/css/bootstrap.min.css";
-import { useState } from "react";
 import "./App.css";
+import "bootstrap/dist/css/bootstrap.min.css";
+
+import React, { useState } from "react";
+
+//components
 import TasksList from "./Components/TasksList";
-import tasksData from "./tasksData";
+import Modal from "./Components/modals/TaskModal";
+
+//bootsrap
+import { Button } from "react-bootstrap";
 
 function App() {
-  const [tasks, setTasks] = useState(tasksData);
+  const [isOpen, setIsOpen] = useState(false);
 
-  // to do : create a task
-  // to do : delete a task
+  const handleClose = () => setIsOpen(false);
+  const handleShow = () => setIsOpen(true);
 
   return (
     <>
-      <div class="row">{/* To do: add a form */}</div>
-      <TasksList tasks={tasks} />
+      <Button variant="primary" onClick={handleShow}>
+        Add
+      </Button>
+      <Modal isOpen={isOpen} handleClose={handleClose} />
+      <TasksList />
     </>
   );
 }
