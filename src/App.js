@@ -12,8 +12,6 @@ function App() {
     setTasks([...tasks, newTask]);
   };
 
-  // to do : delete a task
-
   return (
     <>
       <div class="row">
